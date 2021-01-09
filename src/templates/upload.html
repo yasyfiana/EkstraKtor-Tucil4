@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.main {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align:center;
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+    <div style="padding:15px;text-align:center;">
+        <h1>Selamat Datang !</h1>
+        <img src="static/logo.png"align="middle" alt="PUSKUSI" >
+        <p> Aplikasi Ekstraksi Informasi<p>
+    </div>
+
+    <div style="overflow:auto">
+        <div class="main">
+            <h2>Masukan Informasi !</h2>
+		    <form method="post" action="/" enctype="multipart/form-data">
+                <p>Key word		:<input type="text" name="key" /></p>
+                <br>
+                    <h5>Select file(s) to upload!</h5>
+                    <input type="file" name="file[]" multiple="true" autocomplete="off">
+                    <h5>Please select the algoritm:</h5>
+                    <input type="radio" name="options" id="KMP" value="KMP" > Knuth-Morris-Pratt
+                    <input type="radio" name="options" id="BM" value="BM" > Booyer-Moore 
+                    <input type="radio" name="options" id="Regex" value="Regex" > Regex <br>
+                        <br>
+                    <br></br>
+                    <input type="submit" name= "button" value="cek">
+                <br></br>
+                <div class="tentang">
+                    <h3>Perihal</h3>
+                    <input type="submit" name= "button" value="disini">
+                </div>
+		    </form>
+        </div>
+    </div>
+    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">Yasyfiana Fariha Putrisusari | 13518143</div>
+
+</body>
+</html>

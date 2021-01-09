@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.main {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  text-align:left;
+}
+.spacer {
+  margin:2.5em 0;
+  line-height:5em;
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+    <div style="padding:15px;text-align:center;">
+        <h1>Hasil Ekstraksi</h1>
+        <img src="static/logo.png"align="middle" alt="PUSKUSI" >
+        <p> Aplikasi Ekstraksi Informasi<p>
+    </div>
+
+    <div style="overflow:auto">
+        <div class="main">
+            <div id = 'foo'>
+                <h> Keyword    : {{key}}</h>
+                <br>
+                <h> Hasil Ekstrasi Informasi    :<h>
+                <br></br>
+                {%for f in result%}
+                <div class ="row">
+                    {%for t in f%}
+                        {%for answer in t%}
+                            {{answer}}
+                            <br>
+                        {%endfor%}
+                        <br>
+                        <p>-----------------------------</p>
+                    {%endfor%}
+                </div>
+                {%endfor%}
+	        </div>
+        </div>
+    </div>
+
+    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">Yasyfiana Fariha Putrisusari | 13518143
+    </div>
+
+</body>
+</html>
